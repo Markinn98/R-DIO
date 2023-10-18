@@ -1,4 +1,5 @@
 function tocasomgrilo(){
     document.querySelector("#som_tecla_grilo").play();
 }
-document.querySelector(".tecla_grilo").onclick = tocasomgrilo;
+const ListaDeTeclas = document.querySelectorAll(".tecla");
+ListaDeTeclas[0].onclick = tocasomgrilo;
