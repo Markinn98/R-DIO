@@ -7,8 +7,11 @@ ListaDeTeclas[0].onclick = tocasomAplausos;
 let contador = 0;
 
 while (contador<ListaDeTeclas.length){
-    ListaDeTeclas[contador].onclick=tocasomAplausos;
+    const efeito = ListaDeTeclas[contador].classList[1]
+    const idAudio = "#som_"+efeito; 
+    ListaDeTeclas[contador].onclick= function () {
+    tocaSom(idAudio)
+    };
     contador=contador+1;
-    console.log(contador);
 }
 
