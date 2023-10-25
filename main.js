@@ -1,8 +1,7 @@
-function tocasomAplausos(){
-    document.querySelector("idElementoAudio").play();
+function tocaSom(idElementoAudio){
+    document.querySelector(idElementoAudio).play();
 }
 const ListaDeTeclas = document.querySelectorAll(".tecla");
-ListaDeTeclas[0].onclick = tocasomAplausos;
 
 let contador = 0;
 
