@@ -22,4 +22,7 @@ tecla.onkeydown = function(){
 tecla.onkeyup = function(){
     tecla.classList.remove('ativa');
 }
-
+tecla.onkeydown = function(evento){
+    if (evento.code === 'Space')
+    tecla.classList.add('ativa');
+}
